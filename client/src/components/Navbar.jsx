@@ -17,19 +17,19 @@ setOpen(!open)
 
     const rotate = open ? "rotate(90deg)" : "rotate(0deg)"
   return (
-    <div className='navbarr'>
+    <div className='navbarr bg-white bg-opacity-40'>
         <div className=''>
         <header className=' h-13   items-center '>
         <div className='flex float-left'>
             <img src="https://img.freepik.com/premium-vector/modern-medical-health-care-center-ayurvedic-logo-design-vector-illustration_898869-79.jpg" alt='logo' className='h-10 w-10 ml-3 rounded object-cover md:h-16 md:w-16 lg:h-16 lg:w-16'/>
-            <h1 className='m-1 my-4 pr-2 font-mono text-lg lg:pr-5 lg:text-xl  md:text-lg'> Amrutam Pharmaceuticals</h1>
+            <h1 className='p-1 py-4 pr-2 font-mono text-lg lg:pr-5 lg:text-xl  md:text-lg'> Amrutam Pharmaceuticals</h1>
             </div>
-         <div className='flex justify-end m-5'>
+         <div className='flex justify-end p-2'>
             <nav >
           <ul className='md:flex lg:flex hidden '>
             <li className=''> <button className='font-mono text-xl rounded-3xl hover:bg-blue-300 px-3 py-2 lg:px-5 md:text-xl md:px-2' onClick={()=>{navigate('/')}}>Home</button></li>
             <li className=''> <button className='font-mono text-xl rounded-3xl hover:bg-blue-300 px-3 py-2 lg:px-5 md:text-xl md:px-2' onClick={()=>{navigate('/addMedicine')}}>Add</button></li>
-            <li className=''> <button className='font-mono text-xl rounded-3xl hover:bg-blue-300 px-3 py-2 lg:px-5 md:text-xl md:px-2'>Caretaker</button></li>
+            <li className=''> <button className='font-mono text-xl rounded-3xl hover:bg-blue-300 px-3 py-2 lg:px-5 md:text-xl md:px-2' onClick={()=>{navigate('/addCaretaker')}}>Caretaker</button></li>
             <li className=''> <button className='font-mono text-xl rounded-3xl hover:bg-blue-300 px-3 py-2 lg:px-5 md:text-xl md:px-2'>Next</button></li>
           </ul>
       </nav>

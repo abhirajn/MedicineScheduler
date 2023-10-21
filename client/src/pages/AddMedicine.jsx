@@ -4,6 +4,7 @@ import '../App.css'
 import morning from '../assets/morning.png'
 import noon from '../assets/noon.png'
 import night from '../assets/night.png'
+import Navbar from '../components/Navbar'
 
 export default function AddMedicine() {
   const[mor , setMor] = useState(false);
@@ -14,6 +15,7 @@ export default function AddMedicine() {
   var st3 = (eve) ? " border-green-600" : "";
   return (
     <div className='addmedi'>
+      <Navbar/>
       <div>  <h1 className='w-full text-center text-3xl font-bold mb-5 my-2'>Enter the details of the medicine 💊 : </h1></div>
     <div className=' h-screen  w-full  flex-col'>
 
